@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rose Beauty Studio, tu centro de estética y uñas. Descubre nuestros tratamientos de belleza y solicita tu cita.">
+    <meta name="theme-color" content="#fff8f7">
+
+    <title>Rose Beauty Studio | Belleza y bienestar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header" id="inicio">
+        <div class="container nav-container">
+            <a class="logo" href="#inicio" aria-label="Rose Beauty Studio, inicio">
+                <span class="logo-flower">❀</span>
+                <span class="logo-text">
+                    <span class="logo-name">Rose</span>
+                    <span class="logo-subtitle">BEAUTY STUDIO</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Menú principal">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#nosotros">Sobre nosotras</a>
+                <a class="nav-link" href="#opiniones">Opiniones</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="button button-small nav-cta" href="#contacto">
+                    Reservar cita
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">TU MOMENTO, TU BELLEZA</span>
+
+                <h1>Cuida de ti,<br>
+                    <em>por dentro y por fuera.</em>
+                </h1>
+
+                <p>
+                    Un espacio creado para ti, donde la belleza,
+                    el cuidado y el bienestar se encuentran.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contacto" class="button">
+                        Reservar mi cita <span>↗</span>
+                    </a>
+                    <a href="#servicios" class="text-link">
+                        Descubrir servicios
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-star">✧</span>
+                    Tu momento de sentirte bien
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=85"
+                    alt="Manicura cuidada en tonos rosa"
+                    fetchpriority="high">
+                <div class="image-label">
+                    <span>Un pequeño momento</span>
+                    <strong>solo para ti ♡</strong>
+                </div>
+            </div>
+
+            <span class="hero-decoration">♡</span>
+        </section>
+
+        <section class="section services-section" id="servicios">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">NUESTROS SERVICIOS</span>
+                    <h2>Belleza en cada detalle</h2>
+                    <p>
+                        Tratamientos pensados para mimarte y hacerte sentir especial.
+                    </p>
+                    <div class="heading-decoration">♡</div>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=80"
+                            alt="Diseño de uñas y manicura"
+                            loading="lazy">
+                        <div class="service-info">
+                            <span class="service-number">01</span>
+                            <h3>Manicura</h3>
+                            <p>Cuidado y belleza para tus manos.</p>
+                            <span class="price">Desde 15 €</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80"
+                            alt="Uñas con acabado profesional"
+                            loading="lazy">
+                        <div class="service-info">
+                            <span class="service-number">02</span>
+                            <h3>Uñas de gel</h3>
+                            <p>Diseños preciosos y un acabado duradero.</p>
+                            <span class="price">Desde 30 €</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=700&q=80"
+                            alt="Tratamiento de cuidado de pies"
+                            loading="lazy">
+                        <div class="service-info">
+                            <span class="service-number">03</span>
+                            <h3>Pedicura</h3>
+                            <p>Un cuidado especial de pies y uñas.</p>
+                            <span class="price">Desde 25 €</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80"
+                            alt="Tratamiento facial en un centro de belleza"
+                            loading="lazy">
+                        <div class="service-info">
+                            <span class="service-number">04</span>
+                            <h3>Limpieza facial</h3>
+                            <p>Un ritual de cuidado para tu piel.</p>
+                            <span class="price">Desde 35 €</span>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="price-note">
+                    * Precios orientativos para esta demostración.
+                    Se adaptarán a los servicios del negocio.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section" id="nosotros">
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=85"
+                    alt="Ambiente relajante de un espacio de bienestar"
+                    loading="lazy">
+                <div class="about-stamp">
+                    <span>Tu belleza</span>
+                    <strong>es única ♡</strong>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="eyebrow">UN ESPACIO PARA TI</span>
+                <h2>Mucho más que belleza,<br>
+                    <em>un momento para ti.</em>
+                </h2>
+
+                <p>
+                    En Rose Beauty Studio creemos que cuidarte es una
+                    forma de regalarte tiempo. Queremos que cada visita
+                    sea una experiencia agradable, con atención cercana
+                    y pequeños detalles que marcan la diferencia.
+                </p>
+
+                <p>
+                    Nos importa escucharte, conocer tus gustos y ayudarte
+                    a encontrar el tratamiento que mejor se adapte a ti.
+                </p>
+
+                <a href="#contacto" class="button button-outline">
+                    Ven a conocernos <span>↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container values-grid">
+                <article class="value-item">
+                    <span class="value-icon">✿</span>
+                    <h3>Cuidado personalizado</h3>
+                    <p>Cada persona es única y merece una atención especial.</p>
+                </article>
+
+                <article class="value-item">
+                    <span class="value-icon">♡</span>
+                    <h3>Atención cercana</h3>
+                    <p>Queremos que te sientas cómoda desde el primer momento.</p>
+                </article>
+
+                <article class="value-item">
+                    <span class="value-icon">✧</span>
+                    <h3>Calidad y detalle</h3>
+                    <p>Cuidamos cada pequeño detalle de tu experiencia.</p>
+                </article>
+
+                <article class="value-item">
+                    <span class="value-icon">❀</span>
+                    <h3>Tu momento de calma</h3>
+                    <p>Un espacio para desconectar de la rutina y mimarte.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section testimonials-section" id="opiniones">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">PALABRAS BONITAS</span>
+                    <h2>Un momento para recordar</h2>
+                    <p>
+                        La confianza y el cariño son parte de cada visita.
+                    </p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="stars" aria-label="5 de 5 estrellas">
+                            ★★★★★
+                        </div>
+                        <blockquote>
+                            “Un espacio precioso y un trato muy cercano.
+                            Salí encantada con el resultado de mis uñas.”
+                        </blockquote>
+                        <p class="reviewer">Laura M.</p>
+                    </article>
+
+                    <article class="testimonial-card featured-review">
+                        <div class="stars" aria-label="5 de 5 estrellas">
+                            ★★★★★
+                        </div>
+                        <blockquote>
+                            “Una experiencia muy relajante. Me encantó
+                            la atención y el cuidado de cada detalle.”
+                        </blockquote>
+                        <p class="reviewer">Paula R.</p>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="stars" aria-label="5 de 5 estrellas">
+                            ★★★★★
+                        </div>
+                        <blockquote>
+                            “El ambiente es precioso y te hacen sentir
+                            muy cómoda. Volveré sin duda.”
+                        </blockquote>
+                        <p class="reviewer">Sofía G.</p>
+                    </article>
+                </div>
+
+                <p class="demo-note">
+                    Las opiniones de esta página son ejemplos ficticios
+                    para la demostración y deberán sustituirse por reseñas reales.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <span class="eyebrow">ESTAMOS DESEANDO CONOCERTE</span>
+                    <h2>Tu próximo momento<br>
+                        <em>empieza aquí.</em>
+                    </h2>
+                    <p>
+                        Cuéntanos qué necesitas y te ayudaremos a
+                        encontrar el tratamiento perfecto para ti.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span class="detail-icon">⌕</span>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p>Consulta disponibilidad y solicita tu cita.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="detail-icon">◷</span>
+                        <div>
+                            <strong>Horario</strong>
+                            <p>Lunes a viernes: 10:00–19:00</p>
+                            <p>Sábados: 10:00–14:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="detail-icon">♡</span>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <p>Tu ciudad, España (dirección por personalizar).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="booking-form">
+                    <h3>Solicita tu cita</h3>
+                    <p>Completa los datos y continuaremos por WhatsApp.</p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Tu nombre *</label>
+                            <input type="text" id="name" name="name"
+                                placeholder="Nombre completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Tu teléfono</label>
+                            <input type="tel" id="phone" name="phone"
+                                placeholder="Tu número de teléfono">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">¿Qué tratamiento te interesa? *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option>Manicura</option>
+                            <option>Uñas de gel</option>
+                            <option>Pedicura</option>
+                            <option>Limpieza facial</option>
+                            <option>Quiero más información</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Fecha preferida</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Cuéntanos algo más (opcional)</label>
+                        <textarea id="message" name="message" rows="3"
+                            placeholder="Tu idea, horario preferido..."></textarea>
+                    </div>
+
+                    <button type="submit" class="button form-button">
+                        Continuar por WhatsApp <span>↗</span>
+                    </button>
+
+                    <p class="form-privacy">
+                        Esta demostración abre WhatsApp con los datos
+                        que hayas introducido. No envía la solicitud
+                        directamente al centro.
+                    </p>
+
+                    <p class="form-status" id="form-status"
+                        role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-main">
+            <a class="logo footer-logo" href="#inicio">
+                <span class="logo-flower">❀</span>
+                <span class="logo-text">
+                    <span class="logo-name">Rose</span>
+                    <span class="logo-subtitle">BEAUTY STUDIO</span>
+                </span>
+            </a>
+
+            <p>Un pequeño momento para ti. ♡</p>
+
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotras</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Rose Beauty Studio.</p>
+            <p>Proyecto de demostración para portfolio.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
